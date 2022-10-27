@@ -2,7 +2,7 @@
 
 Projeto Laravel/Filament para consumo da API de cerveja Punk API. Este projeto foi baseado na OLW (Open Laravel Week) promovida pela equipe do Beer and Code.
 
-![screenshot]()
+![screenshot](https://raw.githubusercontent.com/leandrocfe/olw-1-filament/master/screenshots/beers.jpg)
 
 ## Introdução
 
@@ -38,11 +38,12 @@ sail up -d
 ```
 
 Serviços utilizados:
-laravel.test
-mysql
-redis
-minio
-mailhog
+
+- laravel.test
+- mysql
+- redis
+- minio
+- mailhog
 
 Execute as migrações necessárias com o comando:
 
@@ -72,7 +73,7 @@ Mude o Access Policy do bucket para *public*.
 
 Com o projeto instalado e configurado, você pode acessar no browser a url [http://localhost/admin](http://localhost/admin) e logar.
 
-O projeto utiliza filas para processar o arquivo xls e enviar a notificação por email. Desta forma, você precisa deixar esse comando ativo:
+O projeto utiliza filas para processar o arquivo Excel e enviar a notificação por email. Desta forma, você precisa deixar esse comando em execução:
 ```bash
 sail php artisan queue:work
 ```
